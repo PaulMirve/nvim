@@ -30,6 +30,7 @@ end
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
+  use("EdenEast/nightfox.nvim")
 	use("bluz71/vim-nightfly-guicolors")
 	use("christoomey/vim-tmux-navigator")
 	use("szw/vim-maximizer")
