@@ -54,3 +54,7 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 
 -- eslint formatter
 keymap.set("n", "F", ":Format<cr>")
+
+-- terminal
+keymap.set("t", "<ESC>", "<C-\\><C-n>")
+keymap.set("n", "<leader>gt", ":lua _LAZYGIT_TOGGLE()<cr>")
