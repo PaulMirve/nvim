@@ -43,6 +43,9 @@ return packer.startup(function(use)
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
 
+	-- tabs
+	use("romgrk/barbar.nvim")
+
 	-- vs-code like icons
 	use("nvim-tree/nvim-web-devicons")
 

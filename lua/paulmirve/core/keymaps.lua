@@ -6,6 +6,9 @@ local keymap = vim.keymap
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
+-- To close vim
+keymap.set("n", "<C-c>", ":qa<CR>")
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
@@ -22,10 +25,18 @@ keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 
+local changeTab = function(number)
+	vim.cmd(":BufferGoto" .. number)
+end
+
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
-keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
-keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
-keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
+keymap.set("n", "<leader>tx", ":BufferClose<CR>") -- close current tab
+keymap.set("n", "<leader>tn", ":BufferNext<CR>") --  go to next tab
+keymap.set("n", "<leader>tp", ":BufferPrevious<CR>") --  go to previous tab
+keymap.set("n", "<leader>cat", ":BufferCloseAllButCurrent<CR>") -- close all tabs but the current one
+keymap.set("n", "<leader>t2", function()
+	print(arg)
+end)
 
 -- plugin keymaps
 -- vim-maximizer
