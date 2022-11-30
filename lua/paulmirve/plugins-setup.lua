@@ -103,6 +103,9 @@ return packer.startup(function(use)
 	-- Terminal integration
 	use("akinsho/toggleterm.nvim")
 
+	-- Minimap
+	use("wfxr/minimap.vim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
