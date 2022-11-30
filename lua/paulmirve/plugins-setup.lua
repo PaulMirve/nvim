@@ -106,8 +106,8 @@ return packer.startup(function(use)
 	-- Minimap
 	use("wfxr/minimap.vim")
 
-  -- Indent lines
-  use("lukas-reineke/indent-blankline.nvim")
+	-- Indent lines
+	use("lukas-reineke/indent-blankline.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
