@@ -58,3 +58,5 @@ keymap.set("n", "F", ":Format<cr>")
 -- terminal
 keymap.set("t", "<ESC>", "<C-\\><C-n>")
 keymap.set("n", "<leader>gt", ":lua _LAZYGIT_TOGGLE()<cr>")
+keymap.set("n", "<leader>ft", ":ToggleTerm direction=float<cr>")
+keymap.set("n", "<leader>ht", ":ToggleTerm direction=horizontal<cr>")
