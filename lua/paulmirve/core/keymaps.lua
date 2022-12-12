@@ -5,6 +5,7 @@ local keymap = vim.keymap
 -- general keymaps
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
+keymap.set("n", "<leader>rf", ":checkt[ime]<CR>")
 
 -- To close vim
 keymap.set("n", "<C-c>", ":qa<CR>")
@@ -44,6 +45,7 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window max
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>f", ":NvimTreeFindFile<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
@@ -60,3 +62,7 @@ keymap.set("t", "<ESC>", "<C-\\><C-n>")
 keymap.set("n", "<leader>gt", ":lua _LAZYGIT_TOGGLE()<cr>")
 keymap.set("n", "<leader>ft", ":ToggleTerm direction=float<cr>")
 keymap.set("n", "<leader>ht", ":ToggleTerm direction=horizontal<cr>")
+
+-- minimap
+keymap.set("n", "<leader>mm", ":MinimapToggle<cr>")
+keymap.set("n", "<leader>mmr", ":MinimapRefresh<cr>")

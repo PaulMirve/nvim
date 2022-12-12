@@ -34,7 +34,7 @@ return packer.startup(function(use)
 	use("bluz71/vim-nightfly-guicolors")
 	use("christoomey/vim-tmux-navigator")
 	use("szw/vim-maximizer")
-	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
+	use("tpope/vim-surround") -- add, delete, change surroundings 
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
 	-- commenting with gc
@@ -96,6 +96,7 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  use("APZelos/blamer.nvim") -- show blame information
 
 	-- css colors preview
 	use("norcalli/nvim-colorizer.lua")
